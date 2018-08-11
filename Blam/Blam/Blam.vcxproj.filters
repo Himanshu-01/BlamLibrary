@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Blam">
+      <UniqueIdentifier>{d8f3d385-533c-4693-b9b8-7cd87c5511b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blam\Maths">
+      <UniqueIdentifier>{1aa87d76-b0ae-40b1-8ee3-a06d8d0627d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blam\Cache">
+      <UniqueIdentifier>{8a4fd72e-fc4a-4970-9ba3-37342e975b08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blam\Enums">
+      <UniqueIdentifier>{489df673-7c2e-4659-b356-497093708582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProjectDefaults">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Blam\Cache\Map">
+      <UniqueIdentifier>{244db0ce-e347-4745-84ee-cc9b7ffdd5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blam\Cache\TagGroups">
+      <UniqueIdentifier>{04a375d0-c58b-4d86-a9c8-da4a22e8dbf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blam\Cache\TagBlocks">
+      <UniqueIdentifier>{f05c9d53-1c65-4cf6-ab76-7a4be95a296c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blam\Enums\Tags">
+      <UniqueIdentifier>{2c3a99fd-440c-45e4-bf31-c9d58433e08b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blam\Enums\Tags\TagGroups">
+      <UniqueIdentifier>{ed9e5640-116e-40fd-99b9-c1b0e4ebfee1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>ProjectDefaults</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ProjectDefaults</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Angle.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\ColorARGB.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\ColorRGB.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Maths.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Point2D.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\Point3D.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\RealColorARGB.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\RealColorRGB.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\RealPoint2D.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\RealPoint3D.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\RealVector2D.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Maths\RealVector3D.h">
+      <Filter>Blam\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="BlamLibrary.h">
+      <Filter>Blam</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\Enums.h">
+      <Filter>Blam\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\Tags\TagGroups.h">
+      <Filter>Blam\Enums\Tags</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ProjectDefaults</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
