@@ -32,6 +32,12 @@
     <Filter Include="Blam\Enums\Tags\TagGroups">
       <UniqueIdentifier>{ed9e5640-116e-40fd-99b9-c1b0e4ebfee1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Blam\Shared">
+      <UniqueIdentifier>{461e3f4d-fade-4005-b7c1-ce98da2097ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blam\Shared\DataTypes">
+      <UniqueIdentifier>{6e7c8a82-ca79-4e1a-8b75-ba5c409e2df6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -87,6 +93,9 @@
     </ClInclude>
     <ClInclude Include="Enums\Tags\TagGroups.h">
       <Filter>Blam\Enums\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="Shared\DatumIndex.h">
+      <Filter>Blam\Shared\DataTypes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
