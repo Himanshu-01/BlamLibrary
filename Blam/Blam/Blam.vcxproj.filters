@@ -94,8 +94,17 @@
     <ClInclude Include="Enums\Tags\TagGroups.h">
       <Filter>Blam\Enums\Tags</Filter>
     </ClInclude>
-    <ClInclude Include="Shared\DatumIndex.h">
+    <ClInclude Include="Shared\DataTypes\DataTypes.h">
       <Filter>Blam\Shared\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shared\DataTypes\DatumIndex.h">
+      <Filter>Blam\Shared\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shared\DataTypes\Reflexive.h">
+      <Filter>Blam\Shared\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Shared\Shared.h">
+      <Filter>Blam\Shared</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
