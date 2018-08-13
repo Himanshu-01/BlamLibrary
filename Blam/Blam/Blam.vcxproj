@@ -135,6 +135,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlamLibrary.h" />
+    <ClInclude Include="Cache\Cache.h" />
+    <ClInclude Include="Cache\DataTypes\Bitfield.h" />
+    <ClInclude Include="Cache\DataTypes\DataRef.h" />
+    <ClInclude Include="Cache\DataTypes\DataTypes.h" />
+    <ClInclude Include="Cache\DataTypes\DatumIndex.h" />
+    <ClInclude Include="Cache\DataTypes\Pad.h" />
+    <ClInclude Include="Cache\DataTypes\Reflexive.h" />
+    <ClInclude Include="Cache\DataTypes\StringID.h" />
+    <ClInclude Include="Cache\DataTypes\Strings.h" />
+    <ClInclude Include="Cache\DataTypes\TagRef.h" />
     <ClInclude Include="Enums\Enums.h" />
     <ClInclude Include="Enums\Tags\TagGroups.h" />
     <ClInclude Include="Maths\Angle.h" />
@@ -149,9 +159,6 @@
     <ClInclude Include="Maths\RealPoint3D.h" />
     <ClInclude Include="Maths\RealVector2D.h" />
     <ClInclude Include="Maths\RealVector3D.h" />
-    <ClInclude Include="Shared\DataTypes\DataTypes.h" />
-    <ClInclude Include="Shared\DataTypes\DatumIndex.h" />
-    <ClInclude Include="Shared\DataTypes\Reflexive.h" />
     <ClInclude Include="Shared\Shared.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />

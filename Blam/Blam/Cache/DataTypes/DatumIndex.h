@@ -3,12 +3,12 @@
 #include <codecvt>
 namespace Blam
 {
-	namespace Shared
+	namespace Cache
 	{
 		namespace DataTypes
 		{
 			/*********************************************************************
-			* Blam::Shared::DataTypes::DatumIndex
+			* Blam::Cache::DataTypes::DatumIndex
 			* 4 BYTE Tag Structure for any TagIndices of Halo 2 CacheFiles
 			**********************************************************************/
 			struct DatumIndex
@@ -56,47 +56,47 @@ namespace Blam
 }
 			
 #pragma region DatumIndex
-inline INT16 Blam::Shared::DataTypes::DatumIndex::ToAbsoluteIndex()
+inline INT16 Blam::Cache::DataTypes::DatumIndex::ToAbsoluteIndex()
 {
 	return this->Index;
 }
-inline INT16 Blam::Shared::DataTypes::DatumIndex::ToIdentifier()
+inline INT16 Blam::Cache::DataTypes::DatumIndex::ToIdentifier()
 {
 	return this->Salt;
 }
-inline bool Blam::Shared::DataTypes::DatumIndex::IsNull()
+inline bool Blam::Cache::DataTypes::DatumIndex::IsNull()
 {
 
 	return this->Salt = 0xFFFF && this->Index == 0xFFFF;
 
 }
-inline void Blam::Shared::DataTypes::DatumIndex::operator = (const INT32 &Value)
+inline void Blam::Cache::DataTypes::DatumIndex::operator = (const INT32 &Value)
 {
 	this->Index = Value & 0x0000FFFF;
 	this->Salt = Value & 0xFFFF0000;
 }
-inline void Blam::Shared::DataTypes::DatumIndex::operator = (const DatumIndex &DatumIndex)
+inline void Blam::Cache::DataTypes::DatumIndex::operator = (const DatumIndex &DatumIndex)
 {
 	this->Index = DatumIndex.Index;
 	this->Salt = DatumIndex.Salt;
 }
-inline bool Blam::Shared::DataTypes::DatumIndex::operator== (const INT32 &Value)
+inline bool Blam::Cache::DataTypes::DatumIndex::operator== (const INT32 &Value)
 {
 	return (this->Index == Value & 0x0000FFFF) && (this->Salt == Value & 0xFFFF0000);
 }
-inline bool Blam::Shared::DataTypes::DatumIndex::operator== (const DatumIndex &DatumIndex)
+inline bool Blam::Cache::DataTypes::DatumIndex::operator== (const DatumIndex &DatumIndex)
 {
 	return (this->Index == DatumIndex.Index) && (this->Salt == DatumIndex.Salt);
 }
-inline bool Blam::Shared::DataTypes::DatumIndex::operator!= (const INT32 &Value)
+inline bool Blam::Cache::DataTypes::DatumIndex::operator!= (const INT32 &Value)
 {
 	return (this->Index != Value & 0x0000FFFF) || (this->Salt != Value & 0xFFFF0000);
 }
-inline bool Blam::Shared::DataTypes::DatumIndex::operator!= (const DatumIndex &DatumIndex)
+inline bool Blam::Cache::DataTypes::DatumIndex::operator!= (const DatumIndex &DatumIndex)
 {
 	return (this->Index != DatumIndex.Index) || (this->Salt != DatumIndex.Salt);
 }
-inline std::string Blam::Shared::DataTypes::DatumIndex::ToString()
+inline std::string Blam::Cache::DataTypes::DatumIndex::ToString()
 {
 	std::string val;
 	val = (UINT32)((this->Salt << 16) | this->Index);

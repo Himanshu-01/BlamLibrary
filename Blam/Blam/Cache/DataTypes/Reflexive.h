@@ -3,12 +3,12 @@
 #include <vector>
 namespace Blam
 {
-	namespace Shared
+	namespace Cache
 	{
 		namespace DataTypes
 		{
 			/*********************************************************************
-			* Blam::Shared::DataTypes::Reflexive
+			* Blam::Cache::DataTypes::Reflexive
 			* 8 BYTE Tag Structure for any Tag Block Field
 			* UINT32 TagBlockCount;
 			* UINT32 TagBlockOffset;
@@ -57,17 +57,17 @@ namespace Blam
 }
 
 template<typename T>
-inline std::size_t Blam::Shared::DataTypes::Reflexive<T>::GetFieldSize()
+inline std::size_t Blam::Cache::DataTypes::Reflexive<T>::GetFieldSize()
 {
 	return sizeof(T);
 }
 template<typename T>
-inline std::size_t Blam::Shared::DataTypes::Reflexive<T>::GetTotalSize()
+inline std::size_t Blam::Cache::DataTypes::Reflexive<T>::GetTotalSize()
 {
 	return this->GetFieldSize() * TagBlockCount;
 }
 template<typename T>
-inline std::vector<T*>  Blam::Shared::DataTypes::Reflexive<T>::GetTagBlockElements()
+inline std::vector<T*>  Blam::Cache::DataTypes::Reflexive<T>::GetTagBlockElements()
 {
 	//Incomplete :: Need a better way to Point to Each Element
 	int SharedMapBase = 0;
@@ -82,6 +82,6 @@ inline std::vector<T*>  Blam::Shared::DataTypes::Reflexive<T>::GetTagBlockElemen
 	return TagFields;
 }
 template<typename T>
-inline UINT32 Blam::Shared::DataTypes::Reflexive<T>::GetFieldOffset() { return this->TagBlockOffset; }
+inline UINT32 Blam::Cache::DataTypes::Reflexive<T>::GetFieldOffset() { return this->TagBlockOffset; }
 template<typename T>
-inline UINT32 Blam::Shared::DataTypes::Reflexive<T>::GetElementCount() { return this->TagBlockCount; }
+inline UINT32 Blam::Cache::DataTypes::Reflexive<T>::GetElementCount() { return this->TagBlockCount; }
