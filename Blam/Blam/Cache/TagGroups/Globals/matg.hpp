@@ -104,13 +104,7 @@ namespace Blam
 					int portugueseStringTableSize;
 					int portugueseStringIndexOffset;
 					int portugueseStringTableOffset;
-					int unknownPor;
-
-					virtual std::string GetLongName()
-					{
-						std::string k = "globals";
-						return k;
-					}
+					int unknownPor;					
 				};
 				TAG_GROUP_SIZE_ASSERT(matg, 644);
 			}

@@ -158,6 +158,15 @@
     <ClInclude Include="Enums\DefaultSID.hpp">
       <Filter>Enums</Filter>
     </ClInclude>
+    <ClInclude Include="Cache\TagBlocks\Globals\hudg.hpp">
+      <Filter>Cache\TagBlocks\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Cache\TagGroups\Globals\hudg.hpp">
+      <Filter>Cache\TagGroups\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\Tags\TagGroups\hudg.hpp">
+      <Filter>Enums\Tags\TagGroups</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

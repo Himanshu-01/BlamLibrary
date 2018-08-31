@@ -15,11 +15,12 @@ namespace Blam
 		template <const LONG GroupTag>
 		struct TagGroup
 		{
-			static const LONG GroupTagValue = GroupTag;				
-			static virtual std::string GetLongName()
-			{
-				return std::string(0);
-			}
+			//TagGroup Shorthand Class Code
+			static const LONG GroupTagValue = GroupTag;	
+
+			//TagGroup Full Name
+			static std::string LongName; //Need a quite way to define for individual tags
+			
 		};
 		
 			
