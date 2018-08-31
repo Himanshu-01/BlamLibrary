@@ -149,6 +149,7 @@
     <ClInclude Include="Cache\TagBlocks\Globals\matg.hpp" />
     <ClInclude Include="Cache\TagGroups.hpp" />
     <ClInclude Include="Cache\TagGroups\Globals\matg.hpp" />
+    <ClInclude Include="Enums\DefaultSID.hpp" />
     <ClInclude Include="Enums\Enums.h" />
     <ClInclude Include="Enums\Tags\TagGroups.h" />
     <ClInclude Include="Enums\Tags\TagGroups\matg.hpp" />
