@@ -35,6 +35,24 @@
     <Filter Include="Cache\DataTypes">
       <UniqueIdentifier>{6e7c8a82-ca79-4e1a-8b75-ba5c409e2df6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cache\TagGroups\Globals">
+      <UniqueIdentifier>{7b037b7a-e09a-4581-8b68-ea22e4ccca9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cache\TagGroups\Items">
+      <UniqueIdentifier>{280bfb9e-5303-48fa-a8ea-f2044f667530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cache\TagGroups\Sound">
+      <UniqueIdentifier>{5032f8ff-fdac-47b0-b3fb-df3c72bd2263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cache\TagGroups\Objects">
+      <UniqueIdentifier>{69db4871-75c1-4d6e-9e93-f9f589c1e68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cache\TagGroups\Interface">
+      <UniqueIdentifier>{cbcf3b70-fad3-4f82-928a-59628a644ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cache\TagBlocks\Globals">
+      <UniqueIdentifier>{6043d75a-3db5-448d-9873-20da216043fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -121,6 +139,21 @@
     </ClInclude>
     <ClInclude Include="Cache\DataTypes\DataRef.h">
       <Filter>Cache\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Cache\TagBlocks.hpp">
+      <Filter>Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Cache\TagGroups.hpp">
+      <Filter>Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Cache\TagGroups\Globals\matg.hpp">
+      <Filter>Cache\TagGroups\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Cache\TagBlocks\Globals\matg.hpp">
+      <Filter>Cache\TagBlocks\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\Tags\TagGroups\matg.hpp">
+      <Filter>Enums\Tags\TagGroups</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

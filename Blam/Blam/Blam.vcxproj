@@ -145,8 +145,13 @@
     <ClInclude Include="Cache\DataTypes\StringID.h" />
     <ClInclude Include="Cache\DataTypes\Strings.h" />
     <ClInclude Include="Cache\DataTypes\TagRef.h" />
+    <ClInclude Include="Cache\TagBlocks.hpp" />
+    <ClInclude Include="Cache\TagBlocks\Globals\matg.hpp" />
+    <ClInclude Include="Cache\TagGroups.hpp" />
+    <ClInclude Include="Cache\TagGroups\Globals\matg.hpp" />
     <ClInclude Include="Enums\Enums.h" />
     <ClInclude Include="Enums\Tags\TagGroups.h" />
+    <ClInclude Include="Enums\Tags\TagGroups\matg.hpp" />
     <ClInclude Include="Maths\Angle.h" />
     <ClInclude Include="Maths\ColorARGB.h" />
     <ClInclude Include="Maths\ColorRGB.h" />

@@ -17,6 +17,8 @@ namespace Blam
 			{
 				char Text[length];
 				std::string GetString();
+				void operator = (const char* Value);
+				void operator = (const String Value);
 			};
 			/*********************************************************************
 			* Blam::Cache::DataTypes::String32
@@ -55,6 +57,8 @@ namespace Blam
 			{
 				wchar_t String[length];
 				std::wstring GetString();
+				void operator = (const char* Value);
+				void operator = (const Unicode Value);
 			};
 			/*********************************************************************
 			* Blam::Cache::DataTypes::Unicode32
@@ -88,6 +92,16 @@ inline std::string  Blam::Cache::DataTypes::String<T>::GetString()
 	std::string k = this->Text;
 	return k;
 }
+template<int T>
+inline void Blam::Cache::DataTypes::String<T>::operator= (const char* Value)
+{
+	this->Text = Value;
+}
+template<int T>
+inline void Blam::Cache::DataTypes::String<T>::operator= (const String Value)
+{
+	this->Text = Value.Text;
+}
 
 template<int T>
 inline std::wstring  Blam::Cache::DataTypes::Unicode<T>::GetString()
@@ -95,3 +109,14 @@ inline std::wstring  Blam::Cache::DataTypes::Unicode<T>::GetString()
 	std::wstring k = this->Text;
 	return k;
 }
+template<int T>
+inline void Blam::Cache::DataTypes::Unicode<T>::operator= (const char* Value)
+{
+	this->Text = Value;
+}
+template<int T>
+inline void Blam::Cache::DataTypes::Unicode<T>::operator= (const Unicode Value)
+{
+	this->Text = Value.Text;
+}
+
