@@ -167,6 +167,12 @@
     <ClInclude Include="Enums\Tags\TagGroups\hudg.hpp">
       <Filter>Enums\Tags\TagGroups</Filter>
     </ClInclude>
+    <ClInclude Include="Cache\TagGroups\TagGroups.h">
+      <Filter>Cache\TagGroups</Filter>
+    </ClInclude>
+    <ClInclude Include="Cache\TagBlocks\TagBlocks.h">
+      <Filter>Cache\TagBlocks</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
