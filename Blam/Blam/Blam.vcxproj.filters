@@ -53,6 +53,9 @@
     <Filter Include="Cache\TagBlocks\Globals">
       <UniqueIdentifier>{6043d75a-3db5-448d-9873-20da216043fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cache\TagBlocks\Interface">
+      <UniqueIdentifier>{1413eeea-cd97-4757-a2f3-ce22f6845749}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -172,6 +175,15 @@
     </ClInclude>
     <ClInclude Include="Cache\TagBlocks\TagBlocks.h">
       <Filter>Cache\TagBlocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Cache\TagGroups\Interface\nhdt.hpp">
+      <Filter>Cache\TagGroups\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Cache\TagBlocks\Interface\nhdt.hpp">
+      <Filter>Cache\TagBlocks\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums\Tags\TagGroups\nhdt.hpp">
+      <Filter>Enums\Tags\TagGroups</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

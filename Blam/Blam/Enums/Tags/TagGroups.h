@@ -1,5 +1,6 @@
 #pragma once
 #include "TagGroups\matg.hpp"
+#include "TagGroups\nhdt.hpp"
 namespace Blam
 {
 	namespace Enums

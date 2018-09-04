@@ -1,6 +1,5 @@
 #pragma once
 #include <Windows.h>
-#include <vector>
 namespace Blam
 {
 	namespace Cache
@@ -43,8 +42,8 @@ namespace Blam
 				std::size_t GetFieldSize();
 				//* Returna Total Tag Block Field Size of all Elements
 				std::size_t GetTotalSize();
-				//* Returns Tag Block Field Elements
-				std::vector<T*> GetTagBlockElements();
+				//* Returns Tag Block Field Elements Pointer(List)
+				T** GetTagBlockElements();
 			private:
 				//* Number of Block Field Elements
 				UINT32 TagBlockCount;
@@ -67,18 +66,11 @@ inline std::size_t Blam::Cache::DataTypes::Reflexive<T>::GetTotalSize()
 	return this->GetFieldSize() * TagBlockCount;
 }
 template<typename T>
-inline std::vector<T*>  Blam::Cache::DataTypes::Reflexive<T>::GetTagBlockElements()
-{
-	//Incomplete :: Need a better way to Point to Each Element
-	int SharedMapBase = 0;
+T**  Blam::Cache::DataTypes::Reflexive<T>::GetTagBlockElements()
+{	
+	int SharedMapBase = 0;//Need to update it later
 	int MemPtr = SharedMapBase + TagBlockOffset;
-	std::vector<T*> TagFields;
-	for (int i = 0; i <= this->TagBlockCount; i++)
-	{
-		T* p;
-		p = (T*)(MemPtr + (this->GetFieldSize()*i));
-		TagFields.push_back(p);
-	}
+	T** TagFields = MemPtr;
 	return TagFields;
 }
 template<typename T>

@@ -24,7 +24,7 @@ namespace Blam
 				* max_count:    18
 				*
 				****************************************/
-				struct button_icons
+				struct button_icons :Blam::Cache::TagBlock<Blam::Enums::Tags::TagGroupTypes::hudglobals>
 				{
 					INT16 sequenceIndex;
 					INT16 widthOffset;
@@ -45,7 +45,7 @@ namespace Blam
 				* max_count:    -1
 				*
 				****************************************/
-				struct dashlights
+				struct dashlights :Blam::Cache::TagBlock<Blam::Enums::Tags::TagGroupTypes::hudglobals>
 				{
 					DataTypes::tagRef bitmap;
 					DataTypes::tagRef shader;
@@ -60,7 +60,7 @@ namespace Blam
 				* max_count:    -1
 				*
 				****************************************/
-				struct hud_sounds
+				struct hud_sounds :Blam::Cache::TagBlock<Blam::Enums::Tags::TagGroupTypes::hudglobals>
 				{
 					DataTypes::tagRef chiefsound;
 					DataTypes::BitField32<Blam::Enums::Tags::TagGroups::hudg::HudSounds::HudSoundsFlags> HudSoundsFlags;
@@ -74,7 +74,7 @@ namespace Blam
 				* max_count:    -1
 				*
 				****************************************/
-				struct player_training_data
+				struct player_training_data :Blam::Cache::TagBlock<Blam::Enums::Tags::TagGroupTypes::hudglobals>
 				{
 					DataTypes::StringID displayString;
 					DataTypes::StringID displayString2;
@@ -92,7 +92,7 @@ namespace Blam
 				* max_count:    -1
 				*
 				****************************************/
-				struct waypoint_arrows
+				struct waypoint_arrows :Blam::Cache::TagBlock<Blam::Enums::Tags::TagGroupTypes::hudglobals>
 				{
 					DataTypes::tagRef bitmap;
 					DataTypes::tagRef shader;
@@ -108,7 +108,7 @@ namespace Blam
 				* max_count:    -1
 				*
 				****************************************/
-				struct waypoints
+				struct waypoints :Blam::Cache::TagBlock<Blam::Enums::Tags::TagGroupTypes::hudglobals>
 				{
 					DataTypes::tagRef bitmap;
 					DataTypes::tagRef sahder;
@@ -124,7 +124,7 @@ namespace Blam
 				* max_count:    16
 				*
 				****************************************/
-				struct waypoints_arrows
+				struct waypoints_arrows :Blam::Cache::TagBlock<Blam::Enums::Tags::TagGroupTypes::hudglobals>
 				{
 					DataTypes::String32 name;
 					PAD(8);
